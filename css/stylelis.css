@@ -1,0 +1,279 @@
+
+
+*{
+   margin: 0;
+  
+   box-sizing: border-box;
+   font-family: 'Fira sans','sans-serif';
+
+}
+
+
+:root{
+   --dark: #374151;
+   --darker: #1f2937;
+   --darkest: #111827;
+   --light:#EEE;
+   --pink:#EC4899;
+   --purple:#8B5Cf6;
+   --gray:#6B7280;
+}
+
+ body{
+
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+ background: var(--dark);
+ color: #fff;
+ }
+
+ .header{
+
+  padding: 32px 16px ;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+
+
+ }
+ .header h1{
+
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom:16px;
+  color: var(--gray);
+ 
+ }
+
+ @media(max-width:700px){
+
+   .header h1{
+
+      font-size: 30px;
+    
+     }
+     .header .task-list {
+    
+      padding: 20px 10px ;
+     }
+    #new-task-input{
+      width: 60%;
+      font-size: 14px;
+      border: #EC4899 solid 1px;
+       max-width: 100%; 
+       
+       min-width: 260px;
+      
+    }
+    #new-task-submit{
+      width: 35%;
+      font-size: 14px;
+  
+      
+    }
+   
+  
+    .task-list h2{
+      font-size: 20px;
+      
+    }
+    .task {
+      border: #EC4899 solid 1px;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 90%;
+
+       
+    }
+
+ }
+
+ 
+ #new-task-form{
+   display: flex;
+
+ }
+
+ input ,button{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+
+ }
+ #new-task-input{
+   
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 16px;
+  border-radius: 16px;
+  margin-right: 16px;
+  color: var(--light);
+  font-size: 20px;
+
+ }
+ #new-task-input::placeholder{
+   color: var(--gray);
+ }
+ #new-task-submit{
+   color: var(--pink);
+   font-size: 20px;
+   font-weight: 700;
+   background-image: linear-gradient(to right, var(--pink),
+   var(--purple));
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   cursor: pointer;
+   transition: 0.4s;
+ }
+ #new-task-submit:hover{
+   opacity: 0.8;
+ }
+ #new-task-submit:active{
+   opacity: 0.6;
+ }
+
+ .task-list{
+
+   flex: 1 1 0%;
+ padding: 32px 16px ;
+ max-width: 700px;
+ width: 100%;
+ margin: 0 auto;
+ padding: 16px;
+ }
+ .task-list h2{
+   font-size: 24px;
+   font-weight: 300;
+   margin-bottom:16px;
+   color: var(--gray);
+  
+ }
+#tasks .task{
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--darkest);
+   padding: 16px;
+   border-radius: 16px;
+   margin-bottom: 16px;
+}
+#tasks .task .contant{
+
+   flex: 1 1 0%;
+}
+#tasks .task .contant .text{
+   color: var(--light) !important;
+   font-size: 18px;
+   width: 100%;
+   display: block;
+   transition: 0.4s;
+  
+
+}
+
+
+#tasks .task .contant .text:not(:read-only){
+   color: var(--pink);
+}
+#tasks .task .actions{
+   display: flex;
+   margin:0 -0.5rem ;
+}
+.task .actions button{
+   cursor: pointer;
+   margin:0 0.5rem ;
+   font-size: 1.125rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   transition: 0.4s;
+}
+.task .actions button:hover{
+   opacity: 0.8;
+ }
+ .task .actions button:active{
+   opacity: 0.6;
+ }
+ .task .actions .edit{
+   background-image: linear-gradient(to right, var(--pink),
+   var(--purple));
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   cursor: pointer;
+ }
+ .task .actions .delete{
+
+   color: crimson;
+ }
+
+
+input.text {
+    color: var(--light) !important;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   background: var(--dark);
+   color: #fff;
+} */
+/* .header{
+   padding: 2rem 1rem;
+   max-width: 700px;
+   width: 100%;
+   margin: 0 auto;
+}
+.header h1{
+   font-size: 2.5rem;
+   font-weight: 300;
+   margin-bottom: 1rem;
+    color: var(--gray);
+
+}
+#new-task-form{
+display: flex;
+
+}
+input, button{
+   appearance: none;
+   border: none;
+   outline: none;
+   background: none;
+}
+
+#new-task-input{
+   flex: 1 1 0%;
+   background-color: var(--darker);
+   padding: 1rem;
+   border-radius: 1rem;
+   margin-right: 1rem;
+   color: var(--light);
+   font-size: 1.25rem;
+} */
+
+
