@@ -32,6 +32,19 @@ This is a simple To-Do List application that helps users manage their daily task
 4. Click the delete icon to remove a task.
 
 
+
+## clone 
+''' bash
+git clone https://github.com/Mona-Zedan/ToDoListApp.git 
+
+## Demo Live 
+ Your site is live at https://mona-zedan.github.io/ToDoListApp/
+
+ ## Author 
+ Mona AbdElGhani Zedan
+   
+
+
 ## Contributing
 If you'd like to contribute, please fork the repository and submit a pull request with your changes.
 
