@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
         e.preventDefault();
 
         const task = input.value;
-        const date = new Date().toLocaleString(); // 📅🕒 التاريخ + الوقت
+        const date = new Date().toLocaleString(); // 📅🕒 التاريخ + الوقت 
 
         if (!task) {
             alert('Please Fill Out The Task');
